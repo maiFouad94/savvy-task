@@ -12,7 +12,7 @@ class ItemsController extends Controller
      public function index()
     {
          
-        $items = Item::paginate(4);
+        $items = Item::all();
         return view('items.index',[
         'items' => $items
         	            ]);
